@@ -1,4 +1,4 @@
-import {calculatePrice} from "./src/calc/calculate-price";
+const calculatePrice = require("./calculate-price.js");
 
 const priceArr = [1081.00,
     960.00,
@@ -50,6 +50,6 @@ const priceArr = [1081.00,
     1800.00,
     1475.00,
     550.00];
-
+console.log(calculatePrice)
    let price = calculatePrice(priceArr,10);
-   console.log(price)
+   console.log(price);

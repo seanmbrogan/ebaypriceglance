@@ -47,4 +47,4 @@ function getDiff(num1, num2) {
       return num2 - num1;
     }
   }
-  module.exports = {calcAvg,calcDeviations,tossOutlier};
+module.exports=  {calcAvg,calcDeviations,tossOutlier};
