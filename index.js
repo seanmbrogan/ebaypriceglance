@@ -1,6 +1,6 @@
-const calculatePrice = require("./calculate-price.js");
+const calculatePrice = require("./calc/calculate-price.js");
 
-const priceArr = [1081.00,
+var prices = [1081.00,
     960.00,
     1380.00,
     1620.00,
@@ -50,6 +50,6 @@ const priceArr = [1081.00,
     1800.00,
     1475.00,
     550.00];
-console.log(calculatePrice)
-   let price = calculatePrice(priceArr,10);
-   console.log(price);
+   const targetRange = 5
+   let price = calculatePrice(prices,targetRange);
+   console.log("Market Price @ "+ (100 - targetRange)+"% Precision: $"+price +"\nN="+ prices.length );
